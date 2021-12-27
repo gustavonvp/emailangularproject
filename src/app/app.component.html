@@ -1,0 +1,9 @@
+<form #emailForm="ngForm">
+  <input name="email" [(ngModel)]="email" />
+  {{emailForm.valid}}
+  {{ email }}
+</form>
+
+<div> Is form valid {{emailForm.valid}} </div>
+<div> Form values: {{emailForm.value | json }}</div>
+<div>Email validation errors: {{emailForm.controls.email.errors | json }}</div>
