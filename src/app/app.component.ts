@@ -8,9 +8,4 @@ import { Component } from '@angular/core';
 export class AppComponent {
   email: string;
 
-  constructor(){
-    setInterval(() => {
-       this.email+= 'a';
-    }, 1000);
-  }
 }
